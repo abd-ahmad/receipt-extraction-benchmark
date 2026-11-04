@@ -8,12 +8,12 @@ from src.llm_extract import MODEL, extract_fields
 
 def main():
     parser = argparse.ArgumentParser(description="Extract receipt fields from saved OCR results with an LLM.")
-    parser.add_argument("--split", default="validation", choices=["validation", "test"])
     parser.add_argument("--model", default=MODEL)
+    parser.add_argument("--name", default="ocr_llm", help="Name for the output file, e.g. ocr_llm_v2")
     args = parser.parse_args()
 
     ocr_path = Path(f"results/ocr/{args.split}.json")
-    output = Path(f"results/predictions/ocr_llm_{args.split}.json")
+    output = Path(f"results/predictions/{args.name}_{args.split}.json")
     output.parent.mkdir(parents=True, exist_ok=True)
 
     ocr = json.loads(ocr_path.read_text(encoding="utf-8"))
@@ -28,7 +28,7 @@ def main():
 
     llm_seconds = sum(p["seconds"] for p in predictions) / len(predictions)
     payload = {
-        "method": "ocr_llm",
+        "method": args.name,
         "split": args.split,
         "model": args.model,
         "ocr_seconds_per_image": ocr["seconds_per_image"],
