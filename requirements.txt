@@ -1,12 +1,12 @@
 --extra-index-url https://download.pytorch.org/whl/cu126
-torch
-torchvision
-easyocr
-datasets
-pillow
-matplotlib
-pandas
-ipykernel
-ollama
-transformers
-sentencepiece
+torch==2.14.1
+torchvision==0.29.1
+easyocr==1.7.2
+ollama==0.6.3
+transformers==5.22.1
+sentencepiece==0.2.2
+datasets==5.1.0
+pillow==13.0.0
+matplotlib==3.11.2
+pandas==3.1.0
+ipykernel==7.4.0
