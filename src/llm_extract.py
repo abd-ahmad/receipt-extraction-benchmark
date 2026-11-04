@@ -7,12 +7,12 @@ MODEL = "qwen3:4b"
 
 
 class ReceiptFields(BaseModel):
-    """Die Felder, die das LLM ausgeben soll. Beträge als ganze Zahl, None = steht nicht auf dem Zettel."""
-    total_price: Optional[int] = None
-    subtotal_price: Optional[int] = None
-    tax_price: Optional[int] = None
-    cashprice: Optional[int] = None
-    changeprice: Optional[int] = None
+    """Die Felder, die das LLM ausgeben soll. Alle Felder sind Pflicht; null = steht nicht auf dem Zettel."""
+    total_price: Optional[int]
+    subtotal_price: Optional[int]
+    tax_price: Optional[int]
+    cashprice: Optional[int]
+    changeprice: Optional[int]
 
 
 SYSTEM_PROMPT = """You extract payment amounts from the OCR text of Indonesian shop receipts.
@@ -67,5 +67,6 @@ def extract_fields(ocr_lines, model=MODEL, num_ctx=2048):
         "prompt_tokens": response.prompt_eval_count,
         "output_tokens": response.eval_count,
         "seconds": response.total_duration / 1e9,
+        "raw": response.message.content,
     }
     return fields.model_dump(), stats

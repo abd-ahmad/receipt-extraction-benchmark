@@ -8,6 +8,7 @@ from src.llm_extract import MODEL, extract_fields
 
 def main():
     parser = argparse.ArgumentParser(description="Extract receipt fields from saved OCR results with an LLM.")
+    parser.add_argument("--split", default="validation", choices=["validation", "test"])
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--name", default="ocr_llm", help="Name for the output file, e.g. ocr_llm_v2")
     args = parser.parse_args()
