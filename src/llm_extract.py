@@ -7,19 +7,24 @@ MODEL = "qwen3:4b"
 
 
 class ReceiptFields(BaseModel):
-    """Die Felder, die das LLM ausgeben soll. None = Feld steht nicht auf dem Zettel."""
-    total_price: Optional[str] = None
-    subtotal_price: Optional[str] = None
-    tax_price: Optional[str] = None
-    cashprice: Optional[str] = None
-    changeprice: Optional[str] = None
+    """Die Felder, die das LLM ausgeben soll. Beträge als ganze Zahl, None = steht nicht auf dem Zettel."""
+    total_price: Optional[int] = None
+    subtotal_price: Optional[int] = None
+    tax_price: Optional[int] = None
+    cashprice: Optional[int] = None
+    changeprice: Optional[int] = None
 
 
-SYSTEM_PROMPT = """You extract information from the OCR text of Indonesian shop receipts.
+SYSTEM_PROMPT = """You extract payment amounts from the OCR text of Indonesian shop receipts.
 
-Prices are in Indonesian Rupiah. A comma or dot usually separates thousands (e.g. "45,500" = forty-five thousand five hundred).
+About the amounts:
+- Amounts are in Indonesian Rupiah and have no decimal places.
+- A comma or dot separates thousands: "45,500" and "45.500" both mean 45500.
+- The OCR text contains recognition errors. Characters that look like digits usually are digits:
+  O, o, Q, D, C, c -> 0    and    l, I, ], |, ! -> 1
+- Spaces inside a number are also OCR errors: "50 . 00O" means 50000.
 
-Extract these fields:
+Fields:
 - total_price: the final amount to pay (e.g. after TOTAL, GRAND TOTAL)
 - subtotal_price: the amount before tax and service (e.g. SUBTOTAL, SUB TOTAL)
 - tax_price: the tax amount (e.g. TAX, PB1, PPN)
@@ -27,11 +32,21 @@ Extract these fields:
 - changeprice: the change returned to the customer (e.g. CHANGE, KEMBALI)
 
 Rules:
-- Copy each value as it appears on the receipt.
-- The OCR text may contain recognition errors. Fix obvious errors in numbers, e.g. "O" instead of "0" or "l" instead of "1".
-- If a field does not appear on the receipt, use null. Never calculate a value that is not printed.
+- Return every amount as a whole number without separators, e.g. 45500.
+- If an amount is printed as 0, return 0.
+- If a field does not appear on the receipt, return null.
+- Never calculate a value that is not printed on the receipt.
 
-Respond with JSON only."""
+Example:
+OCR text:
+Nasi Goreng  25,OOO
+Es Teh  5.000
+TOTAL  3O,000
+TUNAI  5O . 0oo
+KEMBALI  2O,0OO
+
+Answer:
+{"total_price": 30000, "subtotal_price": null, "tax_price": null, "cashprice": 50000, "changeprice": 20000}"""
 
 
 def extract_fields(ocr_lines, model=MODEL, num_ctx=2048):

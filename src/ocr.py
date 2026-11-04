@@ -1,6 +1,6 @@
 import numpy as np
 import easyocr
-
+import re
 
 def create_reader(model_dir="data/easyocr_models", gpu=True):
     """Lädt die EasyOCR-Modelle (Detektion + Erkennung)."""
@@ -47,3 +47,19 @@ def group_into_lines(words, y_tolerance=0.5):
         line["boxes"].sort(key=lambda b: b["x"])
         text_lines.append("  ".join(b["text"] for b in line["boxes"]))
     return text_lines
+
+CONFUSIONS = str.maketrans({
+    "O": "0", "o": "0", "Q": "0", "D": "0",
+    "l": "1", "I": "1", "]": "1", "[": "1", "|": "1", "!": "1",
+    "S": "5", "s": "5",
+    "B": "8",
+})
+
+
+def value_in_ocr(value_digits, lines, lenient=True):
+    """Prüft, ob ein Betrag (nur Ziffern) in einer der OCR-Zeilen vorkommt."""
+    for line in lines:
+        text = line.translate(CONFUSIONS) if lenient else line
+        if value_digits in re.sub(r"\D", "", text):
+            return True
+    return False
