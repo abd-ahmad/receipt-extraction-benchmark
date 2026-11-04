@@ -8,3 +8,5 @@ matplotlib
 pandas
 ipykernel
 ollama
+transformers
+sentencepiece
