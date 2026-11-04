@@ -42,7 +42,12 @@ def snap_to_ocr(value, candidates, max_distance=1, min_length=3):
     digits = str(value)
     if digits in candidates:
         return value
-    close = [c for c in candidates if len(c) >= min_length and edit_distance(digits, c) <= max_distance]
+    close = [
+        c for c in candidates
+        if len(c) >= min_length
+        and len(c) >= len(digits)
+        and edit_distance(digits, c) <= max_distance
+    ]
     if len(close) == 1:
         return int(close[0])
     return value
@@ -70,7 +75,7 @@ def main():
                 pred["fields"][key] = snapped
 
     payload["method"] = args.name
-    payload["postprocessing"] = "snap_to_ocr(max_distance=1, min_length=3)"
+    payload["postprocessing"] = "snap_to_ocr(max_distance=1, min_length=3, no_shortening)"
     output = path.parent / f"{args.name}_{payload['split']}.json"
     output.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Changed {changed} values. Saved to {output}")
