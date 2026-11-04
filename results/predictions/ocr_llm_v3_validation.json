@@ -1,0 +1,1572 @@
+{
+  "method": "ocr_llm_v3",
+  "split": "validation",
+  "model": "qwen3:4b",
+  "ocr_seconds_per_image": 2.202,
+  "llm_seconds_per_image": 6.664,
+  "predictions": [
+    {
+      "index": 0,
+      "fields": {
+        "total_price": 45500,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 50000,
+        "changeprice": 4500
+      },
+      "prompt_tokens": 507,
+      "output_tokens": 52,
+      "seconds": 6.434475,
+      "raw": "{\n  \"total_price\": 45500,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 4500\n}"
+    },
+    {
+      "index": 1,
+      "fields": {
+        "total_price": 23000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 50010,
+        "changeprice": 27000
+      },
+      "prompt_tokens": 489,
+      "output_tokens": 53,
+      "seconds": 6.7290043,
+      "raw": "{\n  \"total_price\": 23000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 50010,\n  \"changeprice\": 27000\n}"
+    },
+    {
+      "index": 2,
+      "fields": {
+        "total_price": 100000,
+        "subtotal_price": 20000,
+        "tax_price": 80000,
+        "cashprice": null,
+        "changeprice": 80000
+      },
+      "prompt_tokens": 527,
+      "output_tokens": 59,
+      "seconds": 7.3513022,
+      "raw": "{\n  \"total_price\": 100000,\n  \"subtotal_price\": 20000,\n  \"tax_price\": 80000,\n  \"cashprice\": null,\n  \"changeprice\": 80000\n}"
+    },
+    {
+      "index": 3,
+      "fields": {
+        "total_price": 28000,
+        "subtotal_price": 28000,
+        "tax_price": null,
+        "cashprice": 28000,
+        "changeprice": null
+      },
+      "prompt_tokens": 519,
+      "output_tokens": 53,
+      "seconds": 6.5931068,
+      "raw": "{\n  \"total_price\": 28000,\n  \"subtotal_price\": 28000,\n  \"tax_price\": null,\n  \"cashprice\": 28000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 4,
+      "fields": {
+        "total_price": 41000,
+        "subtotal_price": 41000,
+        "tax_price": null,
+        "cashprice": 50000,
+        "changeprice": 9000
+      },
+      "prompt_tokens": 499,
+      "output_tokens": 57,
+      "seconds": 7.3946312,
+      "raw": "{\n  \"total_price\": 41000,\n  \"subtotal_price\": 41001,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 9000\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 41001,
+          "to": 41000
+        }
+      }
+    },
+    {
+      "index": 5,
+      "fields": {
+        "total_price": 8030,
+        "subtotal_price": null,
+        "tax_price": 727,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 476,
+      "output_tokens": 45,
+      "seconds": 5.4704325,
+      "raw": "{\n  \"total_price\": 8030,\n  \"subtotal_price\": null,\n  \"tax_price\": 727,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 6,
+      "fields": {
+        "total_price": 123200,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 508,
+      "output_tokens": 44,
+      "seconds": 5.4365761,
+      "raw": "{\n  \"total_price\": 123200,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 7,
+      "fields": {
+        "total_price": 595005,
+        "subtotal_price": 63636,
+        "tax_price": 5409,
+        "cashprice": 100000,
+        "changeprice": 40500
+      },
+      "prompt_tokens": 533,
+      "output_tokens": 63,
+      "seconds": 7.8360854,
+      "raw": "{\n  \"total_price\": 59500,\n  \"subtotal_price\": 63636,\n  \"tax_price\": 5409,\n  \"cashprice\": 100000,\n  \"changeprice\": 40500\n}",
+      "snapped": {
+        "total_price": {
+          "from": 59500,
+          "to": 595005
+        }
+      }
+    },
+    {
+      "index": 8,
+      "fields": {
+        "total_price": 11700,
+        "subtotal_price": 11700,
+        "tax_price": null,
+        "cashprice": 20000,
+        "changeprice": 8300
+      },
+      "prompt_tokens": 538,
+      "output_tokens": 57,
+      "seconds": 7.1687401,
+      "raw": "{\n  \"total_price\": 11700,\n  \"subtotal_price\": 11701,\n  \"tax_price\": null,\n  \"cashprice\": 20000,\n  \"changeprice\": 8300\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 11701,
+          "to": 11700
+        }
+      }
+    },
+    {
+      "index": 9,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 20010,
+        "changeprice": null
+      },
+      "prompt_tokens": 472,
+      "output_tokens": 48,
+      "seconds": 6.058401,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 20010,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 10,
+      "fields": {
+        "total_price": 60000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 60000,
+        "changeprice": null
+      },
+      "prompt_tokens": 486,
+      "output_tokens": 48,
+      "seconds": 6.0051087,
+      "raw": "{\n  \"total_price\": 60000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 60000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 11,
+      "fields": {
+        "total_price": 89100,
+        "subtotal_price": 81000,
+        "tax_price": 8100,
+        "cashprice": null,
+        "changeprice": 0
+      },
+      "prompt_tokens": 571,
+      "output_tokens": 53,
+      "seconds": 6.7451813,
+      "raw": "{\n  \"total_price\": 89100,\n  \"subtotal_price\": 81000,\n  \"tax_price\": 8100,\n  \"cashprice\": null,\n  \"changeprice\": 0\n}"
+    },
+    {
+      "index": 12,
+      "fields": {
+        "total_price": 72000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 472,
+      "output_tokens": 43,
+      "seconds": 5.5054056,
+      "raw": "{\n  \"total_price\": 72000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 13,
+      "fields": {
+        "total_price": 45500,
+        "subtotal_price": 41364,
+        "tax_price": 4136,
+        "cashprice": 50000,
+        "changeprice": -4500
+      },
+      "prompt_tokens": 527,
+      "output_tokens": 61,
+      "seconds": 7.6814165,
+      "raw": "{\n  \"total_price\": 45500,\n  \"subtotal_price\": 41364,\n  \"tax_price\": 4136,\n  \"cashprice\": 50000,\n  \"changeprice\": -4500\n}"
+    },
+    {
+      "index": 14,
+      "fields": {
+        "total_price": 39600,
+        "subtotal_price": 36000,
+        "tax_price": 3600,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 530,
+      "output_tokens": 52,
+      "seconds": 6.9644259,
+      "raw": "{\n  \"total_price\": 39600,\n  \"subtotal_price\": 36000,\n  \"tax_price\": 3600, \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 15,
+      "fields": {
+        "total_price": 59400,
+        "subtotal_price": 54000,
+        "tax_price": 5400,
+        "cashprice": 100000,
+        "changeprice": 40600
+      },
+      "prompt_tokens": 545,
+      "output_tokens": 63,
+      "seconds": 8.0379472,
+      "raw": "{\n  \"total_price\": 59400,\n  \"subtotal_price\": 54000,\n  \"tax_price\": 5400, \"cashprice\": 100000,\n  \"changeprice\": 40600\n}"
+    },
+    {
+      "index": 16,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 100,
+        "changeprice": 8000
+      },
+      "prompt_tokens": 478,
+      "output_tokens": 50,
+      "seconds": 6.4162334,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 100,\n  \"changeprice\": 8000\n}"
+    },
+    {
+      "index": 17,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": 20000,
+        "tax_price": 20000,
+        "cashprice": 100000,
+        "changeprice": 50000
+      },
+      "prompt_tokens": 495,
+      "output_tokens": 64,
+      "seconds": 8.008997,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": 20001,\n  \"tax_price\": 20000,\n  \"cashprice\": 100000,\n  \"changeprice\": 50000\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 20001,
+          "to": 20000
+        }
+      }
+    },
+    {
+      "index": 18,
+      "fields": {
+        "total_price": 25000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 100000,
+        "changeprice": 75000
+      },
+      "prompt_tokens": 508,
+      "output_tokens": 54,
+      "seconds": 6.7416269,
+      "raw": "{\n  \"total_price\": 25000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 100000,\n  \"changeprice\": 75000\n}"
+    },
+    {
+      "index": 19,
+      "fields": {
+        "total_price": 42500,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 50000,
+        "changeprice": 7500
+      },
+      "prompt_tokens": 519,
+      "output_tokens": 52,
+      "seconds": 6.5765826,
+      "raw": "{\n  \"total_price\": 42500,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 7500\n}"
+    },
+    {
+      "index": 20,
+      "fields": {
+        "total_price": 16500,
+        "subtotal_price": 15000,
+        "tax_price": 1500,
+        "cashprice": 20000,
+        "changeprice": 3500
+      },
+      "prompt_tokens": 516,
+      "output_tokens": 61,
+      "seconds": 7.918611,
+      "raw": "{\n  \"total_price\": 16500,\n  \"subtotal_price\": 15000,\n  \"tax_price\": 1500, \"cashprice\": 20000,\n  \"changeprice\": 3500\n}"
+    },
+    {
+      "index": 21,
+      "fields": {
+        "total_price": 224908,
+        "subtotal_price": null,
+        "tax_price": 20446,
+        "cashprice": 194726,
+        "changeprice": null
+      },
+      "prompt_tokens": 551,
+      "output_tokens": 55,
+      "seconds": 7.1369773,
+      "raw": "{\n  \"total_price\": 224908,\n  \"subtotal_price\": null,\n  \"tax_price\": 20446,\n  \"cashprice\": 194726,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 22,
+      "fields": {
+        "total_price": 3080,
+        "subtotal_price": 28000,
+        "tax_price": 2800,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 501,
+      "output_tokens": 52,
+      "seconds": 6.5233386,
+      "raw": "{\n  \"total_price\": 30800,\n  \"subtotal_price\": 28000,\n  \"tax_price\": 2800,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "total_price": {
+          "from": 30800,
+          "to": 3080
+        }
+      }
+    },
+    {
+      "index": 23,
+      "fields": {
+        "total_price": 1818,
+        "subtotal_price": 18182,
+        "tax_price": 18182,
+        "cashprice": 20000,
+        "changeprice": null
+      },
+      "prompt_tokens": 501,
+      "output_tokens": 57,
+      "seconds": 7.0294015,
+      "raw": "{\n  \"total_price\": 1818,\n  \"subtotal_price\": 18182,\n  \"tax_price\": 18182,\n  \"cashprice\": 20000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 24,
+      "fields": {
+        "total_price": 310000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 19500,
+        "changeprice": 1
+      },
+      "prompt_tokens": 576,
+      "output_tokens": 50,
+      "seconds": 6.5371952,
+      "raw": "{\n  \"total_price\": 310000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 19500,\n  \"changeprice\": 1\n}"
+    },
+    {
+      "index": 25,
+      "fields": {
+        "total_price": 207900,
+        "subtotal_price": 180000,
+        "tax_price": 18000,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 630,
+      "output_tokens": 55,
+      "seconds": 7.3154337,
+      "raw": "{\n  \"total_price\": 207900,\n  \"subtotal_price\": 180000,\n  \"tax_price\": 18000,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 26,
+      "fields": {
+        "total_price": 35000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 558,
+      "output_tokens": 43,
+      "seconds": 5.5991015,
+      "raw": "{\n  \"total_price\": 35000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 27,
+      "fields": {
+        "total_price": 17938,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 501,
+      "output_tokens": 43,
+      "seconds": 5.418839,
+      "raw": "{\n  \"total_price\": 17938,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 28,
+      "fields": {
+        "total_price": 22000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 22000,
+        "changeprice": null
+      },
+      "prompt_tokens": 505,
+      "output_tokens": 48,
+      "seconds": 6.0390063,
+      "raw": "{\n  \"total_price\": 22000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 22000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 29,
+      "fields": {
+        "total_price": 30000,
+        "subtotal_price": 30000,
+        "tax_price": null,
+        "cashprice": 50000,
+        "changeprice": 20000
+      },
+      "prompt_tokens": 486,
+      "output_tokens": 57,
+      "seconds": 7.142987,
+      "raw": "{\n  \"total_price\": 30000,\n  \"subtotal_price\": 30000,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 2000 }",
+      "snapped": {
+        "changeprice": {
+          "from": 2000,
+          "to": 20000
+        }
+      }
+    },
+    {
+      "index": 30,
+      "fields": {
+        "total_price": 21000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 5000,
+        "changeprice": 29000
+      },
+      "prompt_tokens": 499,
+      "output_tokens": 53,
+      "seconds": 6.7856393,
+      "raw": "{\n  \"total_price\": 21000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 29000\n}",
+      "snapped": {
+        "cashprice": {
+          "from": 50000,
+          "to": 5000
+        }
+      }
+    },
+    {
+      "index": 31,
+      "fields": {
+        "total_price": 24000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 24000,
+        "changeprice": null
+      },
+      "prompt_tokens": 474,
+      "output_tokens": 48,
+      "seconds": 5.8827444,
+      "raw": "{\n  \"total_price\": 24000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 24000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 32,
+      "fields": {
+        "total_price": 6000,
+        "subtotal_price": 6000,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 486,
+      "output_tokens": 46,
+      "seconds": 5.8177774,
+      "raw": "{\n  \"total_price\": 6000,\n  \"subtotal_price\": 6000,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 33,
+      "fields": {
+        "total_price": 57500,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 7500,
+        "changeprice": null
+      },
+      "prompt_tokens": 516,
+      "output_tokens": 47,
+      "seconds": 6.0561868,
+      "raw": "{\n  \"total_price\": 57500,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 7500,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 34,
+      "fields": {
+        "total_price": 283338,
+        "subtotal_price": 243000,
+        "tax_price": 25758,
+        "cashprice": 283338,
+        "changeprice": null
+      },
+      "prompt_tokens": 571,
+      "output_tokens": 61,
+      "seconds": 8.0136385,
+      "raw": "{\n  \"total_price\": 283338,\n  \"subtotal_price\": 243000,\n  \"tax_price\": 25758,\n  \"cashprice\": 283338,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 35,
+      "fields": {
+        "total_price": 304326,
+        "subtotal_price": 261000,
+        "tax_price": 15660,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 561,
+      "output_tokens": 55,
+      "seconds": 7.1992402,
+      "raw": "{\n  \"total_price\": 304326,\n  \"subtotal_price\": 261000,\n  \"tax_price\": 15660,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 36,
+      "fields": {
+        "total_price": 4,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 504,
+      "output_tokens": 39,
+      "seconds": 4.9725268,
+      "raw": "{\n  \"total_price\": 4,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 37,
+      "fields": {
+        "total_price": 70000,
+        "subtotal_price": 63636,
+        "tax_price": 6364,
+        "cashprice": 70000,
+        "changeprice": null
+      },
+      "prompt_tokens": 504,
+      "output_tokens": 57,
+      "seconds": 7.1371388,
+      "raw": "{\n  \"total_price\": 70000,\n  \"subtotal_price\": 63636,\n  \"tax_price\": 6364,\n  \"cashprice\": 70000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 38,
+      "fields": {
+        "total_price": 2000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 465,
+      "output_tokens": 43,
+      "seconds": 5.3557146,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "total_price": {
+          "from": 20000,
+          "to": 2000
+        }
+      }
+    },
+    {
+      "index": 39,
+      "fields": {
+        "total_price": 97900,
+        "subtotal_price": 89000,
+        "tax_price": 8900,
+        "cashprice": 100000,
+        "changeprice": 2100
+      },
+      "prompt_tokens": 591,
+      "output_tokens": 62,
+      "seconds": 8.0365406,
+      "raw": "{\n  \"total_price\": 97900,\n  \"subtotal_price\": 89000,\n  \"tax_price\": 8900,\n  \"cashprice\": 100000,\n  \"changeprice\": 2100\n}"
+    },
+    {
+      "index": 40,
+      "fields": {
+        "total_price": 379500,
+        "subtotal_price": 34500,
+        "tax_price": 34500,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 523,
+      "output_tokens": 55,
+      "seconds": 7.1793338,
+      "raw": "{\n  \"total_price\": 379500,\n  \"subtotal_price\": 345000,\n  \"tax_price\": 34501,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 345000,
+          "to": 34500
+        },
+        "tax_price": {
+          "from": 34501,
+          "to": 34500
+        }
+      }
+    },
+    {
+      "index": 41,
+      "fields": {
+        "total_price": 2352460,
+        "subtotal_price": 2000000,
+        "tax_price": 212460,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 690,
+      "output_tokens": 58,
+      "seconds": 7.9902519,
+      "raw": "{\n  \"total_price\": 2352460,\n  \"subtotal_price\": 2000000,\n  \"tax_price\": 212460,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 42,
+      "fields": {
+        "total_price": 53000,
+        "subtotal_price": 52000,
+        "tax_price": null,
+        "cashprice": 53000,
+        "changeprice": null
+      },
+      "prompt_tokens": 541,
+      "output_tokens": 53,
+      "seconds": 6.835637,
+      "raw": "{\n  \"total_price\": 63000,\n  \"subtotal_price\": 52000,\n  \"tax_price\": null,\n  \"cashprice\": 53001,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "total_price": {
+          "from": 63000,
+          "to": 53000
+        },
+        "cashprice": {
+          "from": 53001,
+          "to": 53000
+        }
+      }
+    },
+    {
+      "index": 43,
+      "fields": {
+        "total_price": 278000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 300000,
+        "changeprice": 22000
+      },
+      "prompt_tokens": 517,
+      "output_tokens": 54,
+      "seconds": 6.8497279,
+      "raw": "{\n  \"total_price\": 278000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 30000,\n  \"changeprice\": 22000\n}",
+      "snapped": {
+        "cashprice": {
+          "from": 30000,
+          "to": 300000
+        }
+      }
+    },
+    {
+      "index": 44,
+      "fields": {
+        "total_price": 17938,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 501,
+      "output_tokens": 43,
+      "seconds": 5.6117063,
+      "raw": "{\n  \"total_price\": 17938,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 45,
+      "fields": {
+        "total_price": 287760,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 525,
+      "output_tokens": 44,
+      "seconds": 5.6866952,
+      "raw": "{\n  \"total_price\": 287760,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 46,
+      "fields": {
+        "total_price": 22000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": 22000
+      },
+      "prompt_tokens": 475,
+      "output_tokens": 47,
+      "seconds": 5.7992626,
+      "raw": "{\n  \"total_price\": 22000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": 2200 }",
+      "snapped": {
+        "changeprice": {
+          "from": 2200,
+          "to": 22000
+        }
+      }
+    },
+    {
+      "index": 47,
+      "fields": {
+        "total_price": 42808,
+        "subtotal_price": 42000,
+        "tax_price": 808,
+        "cashprice": 50000,
+        "changeprice": 8000
+      },
+      "prompt_tokens": 493,
+      "output_tokens": 60,
+      "seconds": 7.632755,
+      "raw": "{\n  \"total_price\": 42808,\n  \"subtotal_price\": 42000,\n  \"tax_price\": 808,\n  \"cashprice\": 50000,\n  \"changeprice\": 8000\n}"
+    },
+    {
+      "index": 48,
+      "fields": {
+        "total_price": 61500,
+        "subtotal_price": 55908,
+        "tax_price": 5592,
+        "cashprice": 100000,
+        "changeprice": 8500
+      },
+      "prompt_tokens": 537,
+      "output_tokens": 62,
+      "seconds": 8.0159805,
+      "raw": "{\n  \"total_price\": 61500,\n  \"subtotal_price\": 55908,\n  \"tax_price\": 5592,\n  \"cashprice\": 100000,\n  \"changeprice\": 8500\n}"
+    },
+    {
+      "index": 49,
+      "fields": {
+        "total_price": 74000,
+        "subtotal_price": 74000,
+        "tax_price": 7400,
+        "cashprice": 81400,
+        "changeprice": null
+      },
+      "prompt_tokens": 515,
+      "output_tokens": 57,
+      "seconds": 7.3790514,
+      "raw": "{\n  \"total_price\": 74000,\n  \"subtotal_price\": 74000,\n  \"tax_price\": 7400,\n  \"cashprice\": 81400,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 50,
+      "fields": {
+        "total_price": 26000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 26000,
+        "changeprice": null
+      },
+      "prompt_tokens": 471,
+      "output_tokens": 48,
+      "seconds": 5.9313277,
+      "raw": "{\n  \"total_price\": 26000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 26000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 51,
+      "fields": {
+        "total_price": 57200,
+        "subtotal_price": 57200,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 499,
+      "output_tokens": 48,
+      "seconds": 6.1650508,
+      "raw": "{\n  \"total_price\": 57200,\n  \"subtotal_price\": 57201,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 57201,
+          "to": 57200
+        }
+      }
+    },
+    {
+      "index": 52,
+      "fields": {
+        "total_price": 56000,
+        "subtotal_price": 56000,
+        "tax_price": null,
+        "cashprice": 56000,
+        "changeprice": null
+      },
+      "prompt_tokens": 515,
+      "output_tokens": 53,
+      "seconds": 6.8667061,
+      "raw": "{\n  \"total_price\": 56000,\n  \"subtotal_price\": 56001,\n  \"tax_price\": null,\n  \"cashprice\": 56000,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 56001,
+          "to": 56000
+        }
+      }
+    },
+    {
+      "index": 53,
+      "fields": {
+        "total_price": 31000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 40000,
+        "changeprice": 9000
+      },
+      "prompt_tokens": 530,
+      "output_tokens": 52,
+      "seconds": 6.723657,
+      "raw": "{\n  \"total_price\": 31000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 40000,\n  \"changeprice\": 9000\n}"
+    },
+    {
+      "index": 54,
+      "fields": {
+        "total_price": 40000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 40000,
+        "changeprice": 10002
+      },
+      "prompt_tokens": 502,
+      "output_tokens": 53,
+      "seconds": 6.6754538,
+      "raw": "{\n  \"total_price\": 40000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 10002\n}",
+      "snapped": {
+        "cashprice": {
+          "from": 50000,
+          "to": 40000
+        }
+      }
+    },
+    {
+      "index": 55,
+      "fields": {
+        "total_price": 60000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 509,
+      "output_tokens": 43,
+      "seconds": 5.564996,
+      "raw": "{\n  \"total_price\": 60000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 56,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": 20000,
+        "tax_price": null,
+        "cashprice": 20000,
+        "changeprice": null
+      },
+      "prompt_tokens": 487,
+      "output_tokens": 53,
+      "seconds": 6.9075551,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": 20000,\n  \"tax_price\": null,\n  \"cashprice\": 20000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 57,
+      "fields": {
+        "total_price": 288585,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 536,
+      "output_tokens": 44,
+      "seconds": 5.7236546,
+      "raw": "{\n  \"total_price\": 288585,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 58,
+      "fields": {
+        "total_price": 25000,
+        "subtotal_price": 25000,
+        "tax_price": null,
+        "cashprice": 25000,
+        "changeprice": 0
+      },
+      "prompt_tokens": 489,
+      "output_tokens": 54,
+      "seconds": 6.7591355,
+      "raw": "{\n  \"total_price\": 25000,\n  \"subtotal_price\": 25000,\n  \"tax_price\": null,\n  \"cashprice\": 25000,\n  \"changeprice\": 0\n}"
+    },
+    {
+      "index": 59,
+      "fields": {
+        "total_price": 664329,
+        "subtotal_price": 561800,
+        "tax_price": 60394,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 602,
+      "output_tokens": 55,
+      "seconds": 7.2752511,
+      "raw": "{\n  \"total_price\": 664329,\n  \"subtotal_price\": 561800,\n  \"tax_price\": 60394,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 60,
+      "fields": {
+        "total_price": 180000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 479,
+      "output_tokens": 44,
+      "seconds": 5.6218571,
+      "raw": "{\n  \"total_price\": 180000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 61,
+      "fields": {
+        "total_price": 8250,
+        "subtotal_price": 7500,
+        "tax_price": 750,
+        "cashprice": 10000,
+        "changeprice": 1800
+      },
+      "prompt_tokens": 561,
+      "output_tokens": 58,
+      "seconds": 7.5099116,
+      "raw": "{\n  \"total_price\": 8250,\n  \"subtotal_price\": 7500,\n  \"tax_price\": 750,\n  \"cashprice\": 10000,\n  \"changeprice\": 1800\n}"
+    },
+    {
+      "index": 62,
+      "fields": {
+        "total_price": 38000,
+        "subtotal_price": 56364,
+        "tax_price": 5636,
+        "cashprice": 100000,
+        "changeprice": null
+      },
+      "prompt_tokens": 538,
+      "output_tokens": 58,
+      "seconds": 7.6594812,
+      "raw": "{\n  \"total_price\": 38000,\n  \"subtotal_price\": 56364,\n  \"tax_price\": 5636,\n  \"cashprice\": 100000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 63,
+      "fields": {
+        "total_price": 56800,
+        "subtotal_price": null,
+        "tax_price": 518,
+        "cashprice": 11000,
+        "changeprice": 5320
+      },
+      "prompt_tokens": 553,
+      "output_tokens": 55,
+      "seconds": 7.0082468,
+      "raw": "{\n  \"total_price\": 56800,\n  \"subtotal_price\": null,\n  \"tax_price\": 518,\n  \"cashprice\": 11000,\n  \"changeprice\": 5320\n}"
+    },
+    {
+      "index": 64,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 20010,
+        "changeprice": 80000
+      },
+      "prompt_tokens": 475,
+      "output_tokens": 53,
+      "seconds": 6.6774698,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 20010,\n  \"changeprice\": 80000\n}"
+    },
+    {
+      "index": 65,
+      "fields": {
+        "total_price": 54600,
+        "subtotal_price": null,
+        "tax_price": 4964,
+        "cashprice": 100200,
+        "changeprice": 5500
+      },
+      "prompt_tokens": 563,
+      "output_tokens": 57,
+      "seconds": 7.4147395,
+      "raw": "{\n  \"total_price\": 54600,\n  \"subtotal_price\": null,\n  \"tax_price\": 4964,\n  \"cashprice\": 100200,\n  \"changeprice\": 5500\n}"
+    },
+    {
+      "index": 66,
+      "fields": {
+        "total_price": null,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 457,
+      "output_tokens": 38,
+      "seconds": 4.9718442,
+      "raw": "{\n  \"total_price\": null,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 67,
+      "fields": {
+        "total_price": 7600,
+        "subtotal_price": 69091,
+        "tax_price": 909,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 537,
+      "output_tokens": 52,
+      "seconds": 6.7341386,
+      "raw": "{\n  \"total_price\": 76000,\n  \"subtotal_price\": 69091,\n  \"tax_price\": 909,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "total_price": {
+          "from": 76000,
+          "to": 7600
+        }
+      }
+    },
+    {
+      "index": 68,
+      "fields": {
+        "total_price": 30013,
+        "subtotal_price": 26000,
+        "tax_price": 4000,
+        "cashprice": 30000,
+        "changeprice": 4000
+      },
+      "prompt_tokens": 504,
+      "output_tokens": 61,
+      "seconds": 7.6807672,
+      "raw": "{\n  \"total_price\": 30013,\n  \"subtotal_price\": 26000,\n  \"tax_price\": 4000,\n  \"cashprice\": 30000,\n  \"changeprice\": 4000\n}"
+    },
+    {
+      "index": 69,
+      "fields": {
+        "total_price": 174983,
+        "subtotal_price": 151500,
+        "tax_price": 15908,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 540,
+      "output_tokens": 48,
+      "seconds": 6.2217475,
+      "raw": "{\"total_price\": 174983, \"subtotal_price\": 151500, \"tax_price\": 15908, \"cashprice\": null, \"changeprice\": null}"
+    },
+    {
+      "index": 70,
+      "fields": {
+        "total_price": 121798,
+        "subtotal_price": 103000,
+        "tax_price": 7723,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 539,
+      "output_tokens": 54,
+      "seconds": 7.0611912,
+      "raw": "{\n  \"total_price\": 121798,\n  \"subtotal_price\": 103000,\n  \"tax_price\": 7723,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 71,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": 0,
+        "tax_price": null,
+        "cashprice": 40000,
+        "changeprice": 0
+      },
+      "prompt_tokens": 503,
+      "output_tokens": 50,
+      "seconds": 6.3456047,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": 0,\n  \"tax_price\": null,\n  \"cashprice\": 40000,\n  \"changeprice\": 0\n}"
+    },
+    {
+      "index": 72,
+      "fields": {
+        "total_price": 36000,
+        "subtotal_price": 36000,
+        "tax_price": null,
+        "cashprice": 4607,
+        "changeprice": null
+      },
+      "prompt_tokens": 520,
+      "output_tokens": 52,
+      "seconds": 6.686074,
+      "raw": "{\n  \"total_price\": 36000,\n  \"subtotal_price\": 36000,\n  \"tax_price\": null,\n  \"cashprice\": 4607,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 73,
+      "fields": {
+        "total_price": 20,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 451,
+      "output_tokens": 40,
+      "seconds": 5.3245673,
+      "raw": "{\n  \"total_price\": 20,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 74,
+      "fields": {
+        "total_price": 20000,
+        "subtotal_price": 20000,
+        "tax_price": null,
+        "cashprice": 20000,
+        "changeprice": null
+      },
+      "prompt_tokens": 495,
+      "output_tokens": 53,
+      "seconds": 6.7164056,
+      "raw": "{\n  \"total_price\": 20000,\n  \"subtotal_price\": 20000,\n  \"tax_price\": null,\n  \"cashprice\": 20000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 75,
+      "fields": {
+        "total_price": 66500,
+        "subtotal_price": 60454,
+        "tax_price": 909,
+        "cashprice": 100000,
+        "changeprice": 33500
+      },
+      "prompt_tokens": 556,
+      "output_tokens": 62,
+      "seconds": 8.1014178,
+      "raw": "{\n  \"total_price\": 66500,\n  \"subtotal_price\": 60454,\n  \"tax_price\": 609,\n  \"cashprice\": 100000,\n  \"changeprice\": 33500\n}",
+      "snapped": {
+        "tax_price": {
+          "from": 609,
+          "to": 909
+        }
+      }
+    },
+    {
+      "index": 76,
+      "fields": {
+        "total_price": 99000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 551,
+      "output_tokens": 43,
+      "seconds": 5.5901595,
+      "raw": "{\n  \"total_price\": 99000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 77,
+      "fields": {
+        "total_price": 77,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 70,
+        "changeprice": 0
+      },
+      "prompt_tokens": 507,
+      "output_tokens": 43,
+      "seconds": 5.535819,
+      "raw": "{\n  \"total_price\": 77,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 70,\n  \"changeprice\": 0\n}"
+    },
+    {
+      "index": 78,
+      "fields": {
+        "total_price": 177870,
+        "subtotal_price": 154000,
+        "tax_price": 700,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 550,
+      "output_tokens": 53,
+      "seconds": 6.9883546,
+      "raw": "{\n  \"total_price\": 177870,\n  \"subtotal_price\": 154000,\n  \"tax_price\": 700,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 79,
+      "fields": {
+        "total_price": 72000,
+        "subtotal_price": 72000,
+        "tax_price": null,
+        "cashprice": 72000,
+        "changeprice": null
+      },
+      "prompt_tokens": 562,
+      "output_tokens": 53,
+      "seconds": 7.0255225,
+      "raw": "{\n  \"total_price\": 72000,\n  \"subtotal_price\": 72000,\n  \"tax_price\": null,\n  \"cashprice\": 72000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 80,
+      "fields": {
+        "total_price": 25000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 25000,
+        "changeprice": null
+      },
+      "prompt_tokens": 473,
+      "output_tokens": 48,
+      "seconds": 6.0344615,
+      "raw": "{\n  \"total_price\": 25000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 25000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 81,
+      "fields": {
+        "total_price": 27600,
+        "subtotal_price": 250909,
+        "tax_price": 25091,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 551,
+      "output_tokens": 55,
+      "seconds": 7.014388,
+      "raw": "{\n  \"total_price\": 276000,\n  \"subtotal_price\": 250909,\n  \"tax_price\": 25091,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "total_price": {
+          "from": 276000,
+          "to": 27600
+        }
+      }
+    },
+    {
+      "index": 82,
+      "fields": {
+        "total_price": 35000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": 35000
+      },
+      "prompt_tokens": 536,
+      "output_tokens": 48,
+      "seconds": 6.1378248,
+      "raw": "{\n  \"total_price\": 35000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": 65000\n}",
+      "snapped": {
+        "changeprice": {
+          "from": 65000,
+          "to": 35000
+        }
+      }
+    },
+    {
+      "index": 83,
+      "fields": {
+        "total_price": 17000,
+        "subtotal_price": 17000,
+        "tax_price": null,
+        "cashprice": 17000,
+        "changeprice": null
+      },
+      "prompt_tokens": 490,
+      "output_tokens": 53,
+      "seconds": 6.8530254,
+      "raw": "{\n  \"total_price\": 17000,\n  \"subtotal_price\": 17000,\n  \"tax_price\": null,\n  \"cashprice\": 17001,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "cashprice": {
+          "from": 17001,
+          "to": 17000
+        }
+      }
+    },
+    {
+      "index": 84,
+      "fields": {
+        "total_price": 52000,
+        "subtotal_price": 52000,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 541,
+      "output_tokens": 48,
+      "seconds": 6.2784079,
+      "raw": "{\n  \"total_price\": 52000,\n  \"subtotal_price\": 52001,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}",
+      "snapped": {
+        "subtotal_price": {
+          "from": 52001,
+          "to": 52000
+        }
+      }
+    },
+    {
+      "index": 85,
+      "fields": {
+        "total_price": 15000,
+        "subtotal_price": 13636,
+        "tax_price": 1364,
+        "cashprice": 20000,
+        "changeprice": 500
+      },
+      "prompt_tokens": 536,
+      "output_tokens": 60,
+      "seconds": 7.7815977,
+      "raw": "{\n  \"total_price\": 15000,\n  \"subtotal_price\": 13636,\n  \"tax_price\": 1364,\n  \"cashprice\": 20000,\n  \"changeprice\": 500 }"
+    },
+    {
+      "index": 86,
+      "fields": {
+        "total_price": 26000,
+        "subtotal_price": 26000,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 498,
+      "output_tokens": 48,
+      "seconds": 6.0277586,
+      "raw": "{\n  \"total_price\": 26000,\n  \"subtotal_price\": 26000,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 87,
+      "fields": {
+        "total_price": 29000,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 2000,
+        "changeprice": 1000
+      },
+      "prompt_tokens": 502,
+      "output_tokens": 52,
+      "seconds": 7.105227,
+      "raw": "{\n  \"total_price\": 29000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 2000, \"changeprice\": 1000\n}"
+    },
+    {
+      "index": 88,
+      "fields": {
+        "total_price": 170000,
+        "subtotal_price": 154545,
+        "tax_price": 15455,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 592,
+      "output_tokens": 55,
+      "seconds": 7.3093264,
+      "raw": "{\n  \"total_price\": 170000,\n  \"subtotal_price\": 154545,\n  \"tax_price\": 15455,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 89,
+      "fields": {
+        "total_price": 2900,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 1900,
+        "changeprice": 71000
+      },
+      "prompt_tokens": 505,
+      "output_tokens": 51,
+      "seconds": 6.4327264,
+      "raw": "{\n  \"total_price\": 2900,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 19000,\n  \"changeprice\": 7100\n}",
+      "snapped": {
+        "cashprice": {
+          "from": 19000,
+          "to": 1900
+        },
+        "changeprice": {
+          "from": 7100,
+          "to": 71000
+        }
+      }
+    },
+    {
+      "index": 90,
+      "fields": {
+        "total_price": 70000,
+        "subtotal_price": 70000,
+        "tax_price": 10,
+        "cashprice": null,
+        "changeprice": 0
+      },
+      "prompt_tokens": 539,
+      "output_tokens": 51,
+      "seconds": 6.715793,
+      "raw": "{\n  \"total_price\": 70010,\n  \"subtotal_price\": 70000,\n  \"tax_price\": 10,\n  \"cashprice\": null,\n  \"changeprice\": 0\n}",
+      "snapped": {
+        "total_price": {
+          "from": 70010,
+          "to": 70000
+        }
+      }
+    },
+    {
+      "index": 91,
+      "fields": {
+        "total_price": 4400,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 500100,
+        "changeprice": 6000
+      },
+      "prompt_tokens": 512,
+      "output_tokens": 53,
+      "seconds": 6.7955833,
+      "raw": "{\n  \"total_price\": 44000,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 500100,\n  \"changeprice\": 6000\n}",
+      "snapped": {
+        "total_price": {
+          "from": 44000,
+          "to": 4400
+        }
+      }
+    },
+    {
+      "index": 92,
+      "fields": {
+        "total_price": 25000,
+        "subtotal_price": 20909,
+        "tax_price": 2091,
+        "cashprice": 25000,
+        "changeprice": null
+      },
+      "prompt_tokens": 515,
+      "output_tokens": 57,
+      "seconds": 7.2810668,
+      "raw": "{\n  \"total_price\": 25000,\n  \"subtotal_price\": 20909,\n  \"tax_price\": 2091,\n  \"cashprice\": 25000,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 93,
+      "fields": {
+        "total_price": 172000,
+        "subtotal_price": 156364,
+        "tax_price": 15636,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 599,
+      "output_tokens": 55,
+      "seconds": 7.4191374,
+      "raw": "{\n  \"total_price\": 172000,\n  \"subtotal_price\": 156364,\n  \"tax_price\": 15636,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 94,
+      "fields": {
+        "total_price": 80100,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 531,
+      "output_tokens": 43,
+      "seconds": 5.5190311,
+      "raw": "{\n  \"total_price\": 80100,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 95,
+      "fields": {
+        "total_price": 30000,
+        "subtotal_price": 22708,
+        "tax_price": 10,
+        "cashprice": 50000,
+        "changeprice": 20000
+      },
+      "prompt_tokens": 511,
+      "output_tokens": 60,
+      "seconds": 7.6132901,
+      "raw": "{\n  \"total_price\": 30010,\n  \"subtotal_price\": 22708,\n  \"tax_price\": 10,\n  \"cashprice\": 50000,\n  \"changeprice\": 20000\n}",
+      "snapped": {
+        "total_price": {
+          "from": 30010,
+          "to": 30000
+        }
+      }
+    },
+    {
+      "index": 96,
+      "fields": {
+        "total_price": 12750,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 12800,
+        "changeprice": null
+      },
+      "prompt_tokens": 515,
+      "output_tokens": 48,
+      "seconds": 6.1981712,
+      "raw": "{\n  \"total_price\": 12750,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 12800,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 97,
+      "fields": {
+        "total_price": null,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": null,
+        "changeprice": null
+      },
+      "prompt_tokens": 484,
+      "output_tokens": 38,
+      "seconds": 4.9734074,
+      "raw": "{\n  \"total_price\": null,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": null,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 98,
+      "fields": {
+        "total_price": 30010,
+        "subtotal_price": null,
+        "tax_price": null,
+        "cashprice": 30010,
+        "changeprice": null
+      },
+      "prompt_tokens": 471,
+      "output_tokens": 48,
+      "seconds": 6.0769063,
+      "raw": "{\n  \"total_price\": 30010,\n  \"subtotal_price\": null,\n  \"tax_price\": null,\n  \"cashprice\": 30010,\n  \"changeprice\": null\n}"
+    },
+    {
+      "index": 99,
+      "fields": {
+        "total_price": 39000,
+        "subtotal_price": 39000,
+        "tax_price": null,
+        "cashprice": 50000,
+        "changeprice": 11000
+      },
+      "prompt_tokens": 537,
+      "output_tokens": 58,
+      "seconds": 7.3354046,
+      "raw": "{\n  \"total_price\": 39000,\n  \"subtotal_price\": 39000,\n  \"tax_price\": null,\n  \"cashprice\": 50000,\n  \"changeprice\": 11000\n}"
+    }
+  ],
+  "postprocessing": "snap_to_ocr(max_distance=1, min_length=3)"
+}
